@@ -31,5 +31,6 @@ p {
 }
 /* Селектор для всех элементов внутри ol */
 ol > li{
+    text-align: left;
     font-weight: 600;
 }
