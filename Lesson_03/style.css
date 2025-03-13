@@ -1,1 +1,45 @@
+/*убираем стандартное поведение контейнера при котором padding и border расширяют размер контейнера */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* убираем стандартные отступы у body */
+margin: 0;
+}
+
+main {
+    /* убираем стандартные отступы main контейнера */
+    padding: 0px 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 5px solid cyan;
+    /*margin: 10px; margin:10px(сверху и снизу) 30 px(справа и слева); или можно указать 4 значения которые идут по часовой стрелке*/
+    padding: 20px;
+    margin: 10px 20px;
+    color: antiquewhite;
+}
+.red-box {
+    color: antiquewhite;
+background-color: rgb(212, 107, 107);
+
+}
+
+.blue-box {
+background-color: rgb(86, 86, 146);
+border: 5px dashed greenyellow ;
+}
+
+header {
+    height: 60px;
+    background-color: orange;
+}
+
+p > span {
+    color: rgb(231, 55, 55);
+    text-decoration: underline;
+}
