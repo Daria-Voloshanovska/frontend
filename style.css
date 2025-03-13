@@ -1,0 +1,18 @@
+li {
+    /* убираем стилизацию элементов списка*/
+    list-style: none;
+}
+
+li::before {
+    content: '⚡';
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: orange;
+}
