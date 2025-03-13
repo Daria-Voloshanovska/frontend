@@ -1,3 +1,36 @@
 .profile-card {
-    
+    width: 350px;
+    padding: 30px;
+    border: 1px solid rgb(122, 196, 93);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(68, 68, 68, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.profile-card:hover {
+    border-color: rgb(48, 129, 134);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
+    border: 2px solid  rgba(202, 169, 23, 0.452) ;
+}
+
+.profile-name {
+    margin: 15px 0 10px;
+    font-size: 24px;
+    color: #c98585;
+}
+
+.profile-description {
+    font-size: 15px;
+    color: #131212;
+    line-height: 1.5;
 }
