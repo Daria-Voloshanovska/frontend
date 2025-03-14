@@ -1,8 +1,16 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+position: relative;
 }
 
-main {
-  width: 400vh;
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  width: 250px;
 }
+
 
