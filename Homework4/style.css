@@ -11,6 +11,40 @@ position: relative;
   top: 50px;
   left: 20px;
   width: 250px;
+  
+}
+.imagebanner {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  display: flex;
+  gap: 20px;
+  background: rgba(105, 105, 105, 0.6);
+  padding: 10px 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.overlay-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon {
+  width: 20px;
+  height: auto;
+}
+
+.overlay span {
+  color: rgba(247, 238, 238, 0.534);
+  font-size: 17px;
+  
 }
 
 
