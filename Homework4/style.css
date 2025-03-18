@@ -46,5 +46,65 @@ position: relative;
   font-size: 17px;
   
 }
+.rating-link {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.movie-container {
+  display: none;
+ gap: 20px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#movie-container:target {
+  display: flex;
+}
+
+.movie-card {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
+.movie-card img {
+  display: block;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.rating {
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  top: 20px;
+  left: 10px;
+  color: white;
+}
+
+.tickets {
+  position: absolute;
+  background-color: rgb(255, 86, 0);
+  height: 20px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  bottom: 8px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.green-rating .rating {
+  background-color: rgb(59, 179, 58);
+}
+
+.red-rating .rating {
+  background-color: rgb(255, 0, 0);
+}
 
 
