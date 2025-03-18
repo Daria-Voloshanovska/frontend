@@ -1,18 +1,27 @@
-.movie-card1 {
-  position: relative;
-  height: fit-content;
-  width: fit-content;
+.movie-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.movie-card {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    
 }
 
 img {
-    display: block;
+  display: block;
   width: 200px;
   height: auto;
-  /* margin: 10px 0px 10px 20px;*/
+  border-radius: 10px;
+  
 }
 .rating {
   position: absolute;
-  background-color: rgb(59,179,58);
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 12px;
@@ -23,8 +32,8 @@ img {
 
 .tickets {
   position: absolute;
-  height: 20px;
   background-color: rgb(255,86,0);
+  height: 20px;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
@@ -32,4 +41,12 @@ img {
   bottom: 8px;
   right: 10px;
   cursor: pointer;
+}
+
+.green-rating .rating {
+    background-color: rgb(59,179,58);
+}
+
+.red-rating .rating {
+    background-color: rgb(255,0,0);
 }
