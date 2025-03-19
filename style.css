@@ -7,6 +7,9 @@ li::before {
     content: '⚡';
 }
 
+.homework-list li::before{
+    content:'📑';
+}
 a {
     color: black;
     text-decoration: none;
