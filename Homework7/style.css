@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color:  #E0EAFC;  
+   background: linear-gradient(to right, #CFDEF3, #E0EAFC); 
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2980b9;  
+    background: linear-gradient(to right, #2c3e50, #2980b9);  
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header h1 i {
+margin-right: 10px;
+}
+
+main {
+    flex: 1;
+    margin-top: 60px;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 80px 20px 20px;
+    flex: 1;
+}
+
+.character-card {
+    background-color: rgb(226, 226, 178);
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   overflow: hidden;
+   transition: transform 0.3s ease;
+}
+
+.character-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.character-card h2 {
+    margin: 15px 0;
+    font-size: 18px;
+    color: rgb(36, 35, 35);
+}
+
+.character-card i {
+    font-size: 24px;
+    color:rgb(140, 183, 240);
+    margin-bottom: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #2c3e50, #2980b9);  
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer i {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+}
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    }
+
+@media (max-width: 615px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .character-card {
+        box-shadow: none;
+    }
+    .character-card h2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .character-card {
+        height: auto;
+    }
+
+    .character-card h2 {
+        font-size: 22px;
+    }
+}
