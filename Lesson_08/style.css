@@ -17,6 +17,7 @@
  .page-container {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
  }
  header {
     position: sticky;
@@ -195,6 +196,7 @@
   padding: 20px;
   border-radius: 8px;
   position: relative;
+  left: -130px;
   width: 1200px;
   height: 374px;
   box-sizing: border-box;
@@ -204,7 +206,7 @@
 
  .footer-column {
   background-color: transparent;
-   padding: 15px;
+   padding: 30px;
    border-radius: 8px;
    box-sizing: border-box;
   
@@ -246,32 +248,24 @@
     color: black;
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    width: 140px;
+    gap: 9px;
+    width: max-content;
     height: 24px;
     
  }
  .to-top i {
-    position: relative;
+    
     color: white;
     font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #e40422;
     
  }
- .to-top i::before {
-    content: "";
-    background: #e40422; 
-    width: 24px;
-    height: 24px; 
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%);
-    z-index: -1; 
-    border-radius: 4px; 
-}
+ 
 
  footer {
     background-color:#3b3b3b;
@@ -289,9 +283,10 @@
     height: 289px;
     display: flex;
     justify-content: space-around;
-   max-width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
+    border-radius: 10px;
  }
 
  .footer-brand {
