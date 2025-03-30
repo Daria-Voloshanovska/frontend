@@ -12,7 +12,6 @@ function clearBookList() {
     }
 }
 
-
 function createBookList(){
     const booksElements = books.map(book =>{
         const li = document.createElement('li');
@@ -46,7 +45,6 @@ form.addEventListener('submit', (event) => {
             form.author.value = '';
         }
 });
-
     clearBtn.addEventListener('click', () =>{
         books.length = 0;
         clearBookList();
