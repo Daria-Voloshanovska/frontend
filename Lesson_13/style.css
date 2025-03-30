@@ -1,0 +1,49 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+h1 {
+    margin-bottom: 0;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn {
+    background-color: rgb(129, 166, 233);
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.value {
+    font-size: 60px;
+    font-weight: 300px;
+}
+
+.btn:hover {
+    background-color:  rgb(66, 107, 184);
+}
+
+.toDo{
+    margin-top: 60px;
+}
+form > input {
+    padding: 6px;
+}
+
+.btn-todo {
+background-color: rgb(235, 95, 95);
+}
+.btn-todo:hover {
+background-color: rgb(211, 35, 35);;
+}
+li {
+    cursor: pointer;
+  }
+  
+  li:hover {
+    color: rgb(233, 71, 56);
+  }
