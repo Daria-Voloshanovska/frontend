@@ -2,7 +2,8 @@ body {
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
     max-width: 600px;
-    box-sizing: border-box;
+    margin: 50px auto; 
+    text-align: center;
 }
 
 h2.name-list {
@@ -12,7 +13,8 @@ h2.name-list {
 
 #form {
     display: flex;
-    gap: 2px;
+    gap: 10px;
+    justify-content: center;
     margin-bottom: 20px;
     background: white;
     padding: 10px;
@@ -25,6 +27,7 @@ h2.name-list {
     border: 2px solid #cebaba;
     border-radius: 6px;
     font-size: 15px;
+    width: 70%;
 }
 
 #input-name:focus {
@@ -47,13 +50,16 @@ h2.name-list {
 }
 
 #result {
+   display: inline-block;
    background: linear-gradient(to right, #d6ae7b, #eacda3); 
    padding: 15px;
    border-radius: 10px;
-    
+   margin-top: 10px;
+    text-align: left;
+    min-width: 200px; 
 }
 
 #result p {
-    margin: 0;
+    margin: 5px 0;
     font-size: 17px;
 }
