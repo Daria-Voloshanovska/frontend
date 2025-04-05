@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     }
     
     body {
@@ -124,7 +124,7 @@
     }
     
     .grid-container > section {
-        border: 2px solid #CFD186;
+        border: 2px solid #006d77;;
         padding: 20px;
         border-radius: 5px;
       }
@@ -137,11 +137,11 @@
     
       main > button {
         font-size: 17px;
-        background-color: #b2f7ef;
+        background-color: #badfdc;
         border: none;
         margin-bottom: 20px;
         cursor: pointer;
-        color: rgb(165, 157, 157);
+        color: rgb(100, 98, 98);
         border-radius: 3px;
       }
     
