@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Online-shop</title>
+</head>
+<body>
+    <header>
+        <button class="burger" id="burger"><i class="fa-solid fa-bars"></i></button>
+        <nav class="nav-mobile hide" id="menu">
+          <ul>
+            <li><a href="../index.html">Wear & Carry</a></li>
+            <li><a href="">Beauty & Tech</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-desk">
+        <a href="../index.html"> Wear & Carry</a>
+        <a href="">Beauty & Tech</a>
+        </nav>
+        <div class="cart" id="cart">
+            <i class="fa-solid fa-cart-shopping"><span id="cart-count">0</span></i>
+           </div>
+           <div class="cart-popup hide" id="cart-popup">
+            <h3>Cart</h3>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart">Clear cart</button>
+          </div>
+
+    </header>
+    
+    <main>
+        <h1>Beauty & Tech</h1>
+        <form id="form-products">
+            <label for="limit"> Enter number of products (1-30)</label>
+            <input type="number"  id="limit" name="limit" min="1" max="30" placeholder="Enter the number" required>
+            <button type="submit" id="btn-submit">Submit</button>
+        </form>
+        <div class="error-message hide" id="error-message"></div>
+        <button id="btn-reset">reset</button>
+        <div class="grid-container" id="grid-container"></div>
+       <div class="loader"></div>
+    </main>
+    <footer></footer>
+</body>
+</html>
