@@ -1,0 +1,31 @@
+/* /* подключение скаченого шрифта из файла  */
+@font-face {
+    font-family: 'Fugaz one';
+    src: url('../fonts/FugazOne-Regular.ttf') format('trueType');
+}
+/* использование этого шрифта */
+*{ 
+    font-family: 'Fugaz one', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    margin: 40px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    gap: 5px;
+}
+.grid-container section {
+    padding: 15px;
+    border: 2px solid green;
+    border-radius: 5px;
+  }
+
+  .grid-container img {
+   width: 100%;
+  }
